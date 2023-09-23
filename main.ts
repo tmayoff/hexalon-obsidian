@@ -2,6 +2,7 @@ import { Plugin } from 'obsidian';
 
 import Koa from "koa";
 import Router from "koa-router";
+import zmq from "zeromq";
 
 interface MyPluginSettings {
 }
@@ -17,17 +18,21 @@ export default class MyPlugin extends Plugin {
 
 	async onload() {
 		await this.loadSettings();
-		this.server = new Koa();
-		this.router = new Router();
+		// this.server = new Koa();
+		// this.router = new Router();
 
-		this.router.get('/ttrpg_data', (ctx, next) => {
-			ctx.body = this.app.plugins.plugins["initiative-tracker"].data;
-		});
+		// this.router.get('/ttrpg_data', (ctx, next) => {
+		// ctx.body = this.app.plugins.plugins["initiative-tracker"].data;
+		// });
 
-		this.server.use(this.router.routes());
+		// this.server.use(this.router.routes());
 
-		this.listener = this.server.listen(8080);
-		console.log(this.app.plugins.plugins["initiative-tracker"].data);
+		// this.listener = this.server.listen(8080);
+		// console.log(this.app.plugins.plugins["initiative-tracker"].data);
+
+		let sock = zmq.socket("push");
+		sock.bindSync("tcp://127.0.0.1:3000");
+		// sock.send(this.app.plugins.plugins["initiative-tracker"].data);
 	}
 
 	onunload() {

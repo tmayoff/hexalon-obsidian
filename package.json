@@ -14,6 +14,7 @@
 	"devDependencies": {
 		"@types/koa": "^2.13.9",
 		"@types/node": "^16.11.6",
+		"@types/zeromq": "^5.2.3",
 		"@typescript-eslint/eslint-plugin": "5.29.0",
 		"@typescript-eslint/parser": "5.29.0",
 		"builtin-modules": "3.3.0",
@@ -25,6 +26,7 @@
 	"dependencies": {
 		"@types/koa-router": "^7.4.5",
 		"koa": "^2.14.2",
-		"koa-router": "^12.0.0"
+		"koa-router": "^12.0.0",
+		"zeromq": "5"
 	}
 }
