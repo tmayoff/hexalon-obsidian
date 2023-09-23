@@ -2,6 +2,7 @@ import { Plugin } from 'obsidian';
 
 import Koa from "koa";
 import Router from "koa-router";
+import { get } from 'svelte/store';
 
 interface MyPluginSettings {
 }
@@ -20,14 +21,18 @@ export default class MyPlugin extends Plugin {
 		this.server = new Koa();
 		this.router = new Router();
 
-		this.router.get('/ttrpg_data', (ctx, next) => {
+		this.router.get('/data', ctx => {
 			ctx.body = this.app.plugins.plugins["initiative-tracker"].data;
 		});
 
-		this.server.use(this.router.routes());
+		this.router.get('/tracker/ordered', ctx => {
+			let ordered = get(this.app.plugins.plugins["initiative-tracker"].tracker.ordered);
+			ctx.body = ordered;
+			console.log(ctx.body);
+		});
 
+		this.server.use(this.router.routes());
 		this.listener = this.server.listen(8080);
-		console.log(this.app.plugins.plugins["initiative-tracker"].data);
 	}
 
 	onunload() {
