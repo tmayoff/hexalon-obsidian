@@ -93,7 +93,6 @@ export default class MyPlugin extends Plugin {
 		this.router.get('/tracker/ordered', ctx => {
 			let ordered = this.ordered;
 			ctx.body = ordered;
-			console.log(JSON.stringify(ordered));
 		});
 
 		this.server.use(this.router.routes());
