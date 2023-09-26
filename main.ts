@@ -2,7 +2,6 @@ import { Plugin } from 'obsidian';
 
 import Koa from "koa";
 import Router from "koa-router";
-import { get } from 'svelte/store';
 
 class Creature {
 	active: boolean;
@@ -67,14 +66,14 @@ class Creature {
 	}
 }
 
-interface MyPluginSettings {
+interface BridgeSettings {
 }
 
-const DEFAULT_SETTINGS: MyPluginSettings = {
+const DEFAULT_SETTINGS: BridgeSettings = {
 }
 
-export default class MyPlugin extends Plugin {
-	settings: MyPluginSettings;
+export default class TTRPGBridge extends Plugin {
+	settings: BridgeSettings;
 	server?: Koa;
 	router: Router;
 	listener: any;
