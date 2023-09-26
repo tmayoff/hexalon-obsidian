@@ -86,6 +86,7 @@ export default class TTRPGBridge extends Plugin {
 		this.router = new Router();
 
 		this.router.get('/data', ctx => {
+			//@ts-ignore
 			ctx.body = this.app.plugins.plugins["initiative-tracker"].data;
 		});
 
@@ -97,6 +98,7 @@ export default class TTRPGBridge extends Plugin {
 		this.server.use(this.router.routes());
 		this.listener = this.server.listen(8080);
 
+		//@ts-ignore
 		this.app.plugins.plugins["initiative-tracker"].tracker.ordered.subscribe((ordered: Creature[]) => {
 			let creatures: Creature[] = [];
 			for (let c of ordered) {
