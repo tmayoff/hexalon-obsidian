@@ -12,3 +12,5 @@ updates:
     groups:
       prod-dependencies:
         dependency-type: production
+      dev-dependencies:
+        dependency-type: development
