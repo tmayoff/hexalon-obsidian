@@ -287,9 +287,9 @@
     "@types/koa" "*"
 
 "@types/koa-router@^7.4.5":
-  version "7.4.6"
-  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.4.6.tgz#8489faddecd744f8272ec12d20337d7509b05fe4"
-  integrity sha512-elqZpjdH8bsi4HNSKwjY4nRVi65dd7kJoVEYXHMyI84R3wStzGnFSpYbilzqcUzPeZHiEhL0chfM593NeojqzQ==
+  version "7.4.7"
+  resolved "https://registry.yarnpkg.com/@types/koa-router/-/koa-router-7.4.7.tgz#2bf773716155d86267dbf3e15d6189a234f5ef5a"
+  integrity sha512-aoVQNo7d2aBwD/11pbdzFgMiFsiJwAIDgBLRGZjjZXXOZfvOfKL9QMMnBrPUoiWkEX30L7KUAct8kXJgSNhs4A==
   dependencies:
     "@types/koa" "*"
 
@@ -1018,9 +1018,9 @@ statuses@2.0.1:
   integrity sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==
 
 svelte@^4.2.1:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-4.2.2.tgz#07d42eefc1bce46e48d2056c5f11dc4cc1e06555"
-  integrity sha512-My2tytF2e2NnHSpn2M7/3VdXT4JdTglYVUuSuK/mXL2XtulPYbeBfl8Dm1QiaKRn0zoULRnL+EtfZHHP0k4H3A==
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-4.2.3.tgz#4e77f7d528a543a0d516af00bc9b3131f01a2721"
+  integrity sha512-sqmG9KC6uUc7fb3ZuWoxXvqk6MI9Uu4ABA1M0fYDgTlFYu1k02xp96u6U9+yJZiVm84m9zge7rrA/BNZdFpOKw==
   dependencies:
     "@ampproject/remapping" "^2.2.1"
     "@jridgewell/sourcemap-codec" "^1.4.15"
