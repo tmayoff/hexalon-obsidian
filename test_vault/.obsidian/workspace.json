@@ -14,8 +14,17 @@
               "type": "empty",
               "state": {}
             }
+          },
+          {
+            "id": "b48f52ad95c99bcb",
+            "type": "leaf",
+            "state": {
+              "type": "hexalon-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -23,49 +32,10 @@
   "left": {
     "id": "b0e5d6660dffccfa",
     "type": "split",
-    "children": [
-      {
-        "id": "0dc2c20cef3bd5cb",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "56619097d3a4f9c9",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "88b7f7559822b78a",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "Goblin",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "c676947646269f7c",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
-            }
-          }
-        ]
-      }
-    ],
+    "children": [],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "69bd1da94d64fe55",
@@ -75,52 +45,6 @@
         "id": "8ffe4b093ce319bb",
         "type": "tabs",
         "children": [
-          {
-            "id": "a0c6c13fede0d50e",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "6e6c26c6a36ca944",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "7d12e309568d2f04",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "9e731e29af838195",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {}
-            }
-          },
           {
             "id": "f8831bb12b892005",
             "type": "leaf",
@@ -132,25 +56,10 @@
             }
           },
           {
-            "id": "49fc19276462edaa",
+            "id": "b14856b1a75db0b9",
             "type": "leaf",
             "state": {
               "type": "initiative-tracker-view",
-              "state": {}
-            }
-          }
-        ],
-        "currentTab": 5
-      },
-      {
-        "id": "bccadd464b1487b9",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "7f15e0ff1acd7ea2",
-            "type": "leaf",
-            "state": {
-              "type": "initiative-tracker-creature-view",
               "state": {}
             }
           }
@@ -163,14 +72,14 @@
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "initiative-tracker:Intiative Tracker Encounter Builder": false
+      "obsidian42-brat:BRAT": false,
+      "initiative-tracker:Initiative Tracker Encounter Builder": false,
+      "obsidian-5e-statblocks:Open Creature Pane": false,
+      "tmayoff-hexalon:Activate view": false
     }
   },
-  "active": "b5611396d931ae1f",
+  "active": "b48f52ad95c99bcb",
   "lastOpenFiles": [
     "Conditions.md",
     "World/Locations/Phandalin.md",
