@@ -6,4 +6,8 @@ import vitePluginWasmPack from 'vite-plugin-wasm-pack'
 export default defineConfig({
   plugins: [svelte(),
   vitePluginWasmPack("hexalon")],
+  root: "src",
+  build: {
+    outDir: "test_vault/.obsidian/plugins/hexalon"
+  }
 })

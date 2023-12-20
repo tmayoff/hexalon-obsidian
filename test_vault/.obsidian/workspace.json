@@ -118,16 +118,6 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Dungeons & Dragons/Beastiary/Ash Zombie.md"
-              }
-            }
-          },
-          {
-            "id": "7c0064e64fdfb7b8",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
               "state": {}
             }
           },
@@ -150,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       },
       {
         "id": "bccadd464b1487b9",
@@ -180,8 +170,9 @@
       "initiative-tracker:Intiative Tracker Encounter Builder": false
     }
   },
-  "active": "56619097d3a4f9c9",
+  "active": "b5611396d931ae1f",
   "lastOpenFiles": [
+    "Dungeons & Dragons/Beastiary/Ash Zombie.md",
     "Conditions.md",
     "World/Locations/Phandalin.md",
     "World/Locations/Neverwinter.md",
@@ -212,7 +203,6 @@
     "Campaigns/Lost Mine of Phandelver/Quests/The Banshee's Bargain.md",
     "Campaigns/Lost Mine of Phandelver/Quests/Orc Trouble.md",
     "Campaigns/Lost Mine of Phandelver/Quests/Old Owl Trouble.md",
-    "Campaigns/Lost Mine of Phandelver/Quests/Mirna's Heirloom.md",
     "Campaigns/Curse of Strahd/_attachments/Curse of Strahd Introductory Adventure.pdf",
     "Campaigns/Lost Mine of Phandelver/Quests",
     "Campaigns/Lost Mine of Phandelver/Players",
