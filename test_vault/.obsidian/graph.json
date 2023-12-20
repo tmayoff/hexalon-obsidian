@@ -1,0 +1,79 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": true,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#todo",
+      "color": {
+        "a": 1,
+        "rgb": 11392604
+      }
+    },
+    {
+      "query": "tag:#index-note",
+      "color": {
+        "a": 1,
+        "rgb": 7021527
+      }
+    },
+    {
+      "query": "tag:#blog",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "tag:#dnd-sessions",
+      "color": {
+        "a": 1,
+        "rgb": 13322224
+      }
+    },
+    {
+      "query": "tag:#dnd-player",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "tag:#dnd-rule",
+      "color": {
+        "a": 1,
+        "rgb": 6073814
+      }
+    },
+    {
+      "query": "tag:#dnd-encounter",
+      "color": {
+        "a": 1,
+        "rgb": 13996627
+      }
+    },
+    {
+      "query": "tag:#dnd-monster",
+      "color": {
+        "a": 1,
+        "rgb": 11361494
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -0.4,
+  "nodeSizeMultiplier": 1.00192307692308,
+  "lineSizeMultiplier": 1.00192307692308,
+  "collapse-forces": true,
+  "centerStrength": 0.333333333333333,
+  "repelStrength": 7.39583333333333,
+  "linkStrength": 1,
+  "linkDistance": 177,
+  "scale": 0.21174089757613407,
+  "close": false
+}

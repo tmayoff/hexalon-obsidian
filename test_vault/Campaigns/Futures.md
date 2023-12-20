@@ -1,0 +1,3 @@
+- The Curse of Strahd
+- Call of Cthulhu
+- Icewind Dale

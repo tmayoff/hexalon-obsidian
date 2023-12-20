@@ -1,0 +1,336 @@
+{
+  "workspaces": {
+    "D&D Session": {
+      "main": {
+        "id": "d1a4b53f71d65db1",
+        "type": "split",
+        "children": [
+          {
+            "id": "12d8e586ece06075",
+            "type": "tabs",
+            "dimension": 72.168284789644,
+            "children": [
+              {
+                "id": "5c95724911bfce8f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Dungeons & Dragons/Campaigns/Lost Mine of Phandelver/Session 2.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "id": "70629bf75735c7fc",
+            "type": "tabs",
+            "dimension": 27.831715210355988,
+            "children": [
+              {
+                "id": "b027e6d7e8444281",
+                "type": "leaf",
+                "state": {
+                  "type": "initiative-tracker-view",
+                  "state": {}
+                }
+              },
+              {
+                "id": "ec377cfe00137f3c",
+                "type": "leaf",
+                "state": {
+                  "type": "DICE_ROLLER_VIEW",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1,
+            "stacked": true
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "ceac8627b3f3c8e2",
+        "type": "split",
+        "children": [
+          {
+            "id": "accec558a2563d6f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "67d5b1f87ac28ed7",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "091513cbd5ae7fe9",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "c957a64a40300787",
+                "type": "leaf",
+                "state": {
+                  "type": "file-tree-view",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 200,
+        "collapsed": true
+      },
+      "right": {
+        "id": "1f0d365d1a46dad1",
+        "type": "split",
+        "children": [
+          {
+            "id": "61021b46527ce6c8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "dd342cbd99f6bf72",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Dungeons & Dragons/Campaigns/Lost Mine of Phandelver/Session 2.md",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "c66523b24842c995",
+                "type": "leaf",
+                "state": {
+                  "type": "calendar",
+                  "state": {}
+                }
+              },
+              {
+                "id": "882f40e7a2e09bab",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Dungeons & Dragons/Campaigns/Lost Mine of Phandelver/Session 2.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 313.5,
+        "collapsed": true
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "remotely-save:Remotely Save": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "command-palette:Open command palette": false,
+          "markdown-importer:Open format converter": false,
+          "templates:Insert template": false,
+          "workspaces:Manage workspace layouts": false
+        }
+      },
+      "active": "ec377cfe00137f3c"
+    },
+    "D&D": {
+      "main": {
+        "id": "d1a4b53f71d65db1",
+        "type": "split",
+        "children": [
+          {
+            "id": "12d8e586ece06075",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3734dab0172a2eec",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Dungeons & Dragons/World/Encounters/Phandalin.md",
+                    "mode": "preview",
+                    "backlinks": false,
+                    "source": false
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "878cc5bec0d2843e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Dungeons & Dragons/Campaigns/Lost Mine of Phandelver/NPCs/Sildar Hallwinter.md",
+                    "mode": "source",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "40b9feac7cc67e60",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Dungeons & Dragons/Beastiary/Redbrand Ruffian.md",
+                    "mode": "preview",
+                    "backlinks": false,
+                    "source": false
+                  }
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "ceac8627b3f3c8e2",
+        "type": "split",
+        "children": [
+          {
+            "id": "accec558a2563d6f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "67d5b1f87ac28ed7",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "091513cbd5ae7fe9",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "c957a64a40300787",
+                "type": "leaf",
+                "state": {
+                  "type": "file-tree-view",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 227.51103591918945,
+        "collapsed": true
+      },
+      "right": {
+        "id": "1f0d365d1a46dad1",
+        "type": "split",
+        "children": [
+          {
+            "id": "61021b46527ce6c8",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "882f40e7a2e09bab",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Dungeons & Dragons/Campaigns/Lost Mine of Phandelver/NPCs/Sildar Hallwinter.md"
+                  }
+                }
+              },
+              {
+                "id": "c77bb8b07cdf6264",
+                "type": "leaf",
+                "state": {
+                  "type": "initiative-tracker-view",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "961ff1dd627f1e8f",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "a4d464799b4c087d",
+                "type": "leaf",
+                "state": {
+                  "type": "initiative-tracker-creature-view",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 311.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "table-editor-obsidian:Advanced Tables Toolbar": false,
+          "switcher:Open quick switcher": false,
+          "graph:Open graph view": false,
+          "canvas:Create new canvas": false,
+          "command-palette:Open command palette": false,
+          "templates:Insert template": false,
+          "workspaces:Manage workspace layouts": false
+        }
+      },
+      "active": "c77bb8b07cdf6264"
+    }
+  },
+  "active": "D&D"
+}
