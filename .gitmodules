@@ -1,0 +1,3 @@
+[submodule "hexalon"]
+	path = hexalon
+	url = git@github.com:tmayoff/hexalon.git
