@@ -4,27 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "6e77327878533f4a",
+        "id": "378e823084414c17",
         "type": "tabs",
         "children": [
           {
-            "id": "b5611396d931ae1f",
+            "id": "7bc768e053f75214",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "b48f52ad95c99bcb",
-            "type": "leaf",
-            "state": {
-              "type": "hexalon-view",
+              "type": "hexalon",
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,23 +54,25 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 526.5
+    "width": 458.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
+      "tmayoff-hexalon:Activate view": false,
       "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "obsidian42-brat:BRAT": false,
       "initiative-tracker:Initiative Tracker Encounter Builder": false,
-      "obsidian-5e-statblocks:Open Creature Pane": false,
-      "tmayoff-hexalon:Activate view": false
+      "obsidian-5e-statblocks:Open Creature Pane": false
     }
   },
-  "active": "b48f52ad95c99bcb",
+  "active": "7bc768e053f75214",
   "lastOpenFiles": [
     "Conditions.md",
     "World/Locations/Phandalin.md",
