@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"wasm": "wasm-pack build ./hexalon --target web",
-		"dev": "vite",
+		"dev": "vite build --mode development --watch",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json"
@@ -20,6 +20,8 @@
 		"vite": "^5.0.8"
 	},
 	"dependencies": {
+		"builtin-modules": "^3.3.0",
+		"obsidian": "^1.4.11",
 		"vite-plugin-wasm-pack": "^0.1.12"
 	}
 }

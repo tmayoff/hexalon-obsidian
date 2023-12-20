@@ -1,8 +1,12 @@
 import { ItemView, WorkspaceLeaf } from "obsidian";
 
-export const VIEW_TYPE_HEXALON = "hexalon-view";
+import ViewComponent from "./HexalonView.svelte";
+
+export const VIEW_TYPE_HEXALON = "hexalon";
 
 export class HexalonView extends ItemView {
+    hexalon: ViewComponent | undefined;
+
     constructor(leaf: WorkspaceLeaf) {
         super(leaf);
     }
@@ -16,13 +20,13 @@ export class HexalonView extends ItemView {
     }
 
     async onOpen() {
-        console.log("Opened View");
-        const container = this.containerEl.children[1];
-        container.empty();
-        container.createEl("h4", { text: "Hexalon" });
+        this.hexalon = new ViewComponent({
+            target: this.contentEl,
+
+        });
     }
 
     async onClose() {
-        // Nothing to clean up.
+        this.hexalon?.$destroy();
     }
 }
