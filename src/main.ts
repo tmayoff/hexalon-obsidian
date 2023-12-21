@@ -1,7 +1,8 @@
-import { Plugin } from 'obsidian';
+import { Plugin, WorkspaceLeaf } from 'obsidian';
 
 import Koa from "koa";
 import Router from "koa-router";
+import { HexalonView, VIEW_TYPE_HEXALON } from './hexalon/hexalon';
 
 class Creature {
 	active: boolean;
@@ -72,40 +73,51 @@ interface BridgeSettings {
 const DEFAULT_SETTINGS: BridgeSettings = {
 }
 
+
+
 export default class TTRPGBridge extends Plugin {
-	settings: BridgeSettings;
+	// settings: BridgeSettings;
 	server?: Koa;
-	router: Router;
+	// router: Router;
 	listener: any;
 
-	ordered: Creature[];
+	// ordered: Creature[];
 
 	async onload() {
 		await this.loadSettings();
 		this.server = new Koa();
-		this.router = new Router();
+		// this.router = new Router();
 
-		this.router.get('/data', ctx => {
-			//@ts-ignore
-			ctx.body = this.app.plugins.plugins["initiative-tracker"].data;
+		// this.router.get('/data', ctx => {
+		// 	//@ts-ignore
+		// 	ctx.body = this.app.plugins.plugins["initiative-tracker"].data;
+		// });
+
+		// this.router.get('/tracker/ordered', ctx => {
+		// 	let ordered = this.ordered;
+		// 	ctx.body = ordered;
+		// });
+
+		// this.server.use(this.router.routes());
+		// this.listener = this.server.listen(8080);
+
+		this.registerView(
+			VIEW_TYPE_HEXALON,
+			(leaf) => new HexalonView(leaf)
+		);
+
+		this.addRibbonIcon("dice", "Activate view", () => {
+			this.activateView();
 		});
-
-		this.router.get('/tracker/ordered', ctx => {
-			let ordered = this.ordered;
-			ctx.body = ordered;
-		});
-
-		this.server.use(this.router.routes());
-		this.listener = this.server.listen(8080);
 
 		//@ts-ignore
-		this.app.plugins.plugins["initiative-tracker"].tracker.ordered.subscribe((ordered: Creature[]) => {
-			let creatures: Creature[] = [];
-			for (let c of ordered) {
-				creatures.push(new Creature(c));
-			}
-			this.ordered = creatures;
-		});
+		// this.app.plugins.plugins["initiative-tracker"].tracker.ordered.subscribe((ordered: Creature[]) => {
+		// 	let creatures: Creature[] = [];
+		// 	for (let c of ordered) {
+		// 		creatures.push(new Creature(c));
+		// 	}
+		// 	this.ordered = creatures;
+		// });
 	}
 
 	onunload() {
@@ -113,10 +125,31 @@ export default class TTRPGBridge extends Plugin {
 	}
 
 	async loadSettings() {
-		this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
+		// this.settings = Object.assign({}, DEFAULT_SETTINGS, await this.loadData());
 	}
 
 	async saveSettings() {
-		await this.saveData(this.settings);
+		// await this.saveData(this.settings);
 	}
+
+	async activateView() {
+		const { workspace } = this.app;
+
+		let leaf: WorkspaceLeaf | null = null;
+		const leaves = workspace.getLeavesOfType(VIEW_TYPE_HEXALON);
+
+		if (leaves.length > 0) {
+			// A leaf with our view already exists, use that
+			leaf = leaves[0];
+		} else {
+			// Our view could not be found in the workspace, create a new leaf
+			// in the right sidebar for it
+			leaf = workspace.getRightLeaf(false);
+			await leaf.setViewState({ type: VIEW_TYPE_HEXALON, active: true });
+		}
+
+		// "Reveal" the leaf in case it is in a collapsed sidebar
+		workspace.revealLeaf(leaf);
+	}
+
 }
