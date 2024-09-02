@@ -13,14 +13,14 @@
 	"license": "MIT",
 	"devDependencies": {
 		"@types/koa": "^2.13.9",
-		"@types/node": "^20.8.0",
-		"@typescript-eslint/eslint-plugin": "6.19.1",
-		"@typescript-eslint/parser": "6.19.1",
-		"builtin-modules": "3.3.0",
-		"esbuild": "0.20.0",
+		"@types/node": "^22.5.2",
+		"@typescript-eslint/eslint-plugin": "8.3.0",
+		"@typescript-eslint/parser": "8.3.0",
+		"builtin-modules": "4.0.0",
+		"esbuild": "0.23.1",
 		"obsidian": "latest",
-		"tslib": "2.6.2",
-		"typescript": "5.3.3"
+		"tslib": "2.7.0",
+		"typescript": "5.5.4"
 	},
 	"dependencies": {
 		"@types/koa-router": "^7.4.5",
